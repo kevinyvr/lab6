@@ -8,9 +8,15 @@
   <title>Movieflix</title>
 </head>
 
-<body>
+<body class="searchResult">
   <!-- Your Code Goes Here -->
-
+  <% if (typeof movie !== 'undefined') { %>
+    <h1><%= movie.name %></h1>
+    <p><%= movie.desc %></p>
+    <a href="../">Back to home page</a>
+  <% } else { %>
+    <p>Movie could not be found.</p>
+  <% } %>
 </body>
 
 </html>

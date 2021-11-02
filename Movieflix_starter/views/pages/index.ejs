@@ -17,6 +17,15 @@
     <form>
       <fieldset class="todo-list">
         <legend class="todo-list__title">My Movie List</legend>
+        <% if (typeof movies !== 'undefined') { %>
+        <% movies.forEach((movie) => { %>
+          <label class="todo-list__label">
+            <input type="checkbox" name="" id="" />
+            <i class="check"></i>
+            <span><%= movie %></span>
+          </label>
+        <% }); 
+        } else { %>
         <label class="todo-list__label">
           <input type="checkbox" name="" id="" />
           <i class="check"></i>
@@ -37,6 +46,7 @@
           <i class="check"></i>
           <span>Tenet</span>
         </label>
+        <% } %>
       </fieldset>
     </form>
   </div>

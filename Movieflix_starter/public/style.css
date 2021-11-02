@@ -3,6 +3,9 @@ body {
   background: #313a5c;
   font-family: 'Open Sans', sans-serif;
 }
+body.searchResult {
+  background-color:#fff;
+}
 
 .header {
   color: #f1faee;
